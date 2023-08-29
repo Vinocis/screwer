@@ -8,6 +8,7 @@ defmodule Screwer.Application do
   @impl true
   def start(_type, _args) do
     children = [
+      Screwer.Repo
       # Starts a worker by calling: Screwer.Worker.start_link(arg)
       # {Screwer.Worker, arg}
     ]
